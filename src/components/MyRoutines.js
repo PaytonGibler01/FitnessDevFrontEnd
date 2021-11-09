@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Header = () => {
+const MyRoutines = () => {
   return (
     <header>
-      <h1>Welcome to Header Component</h1>
+      <h1>Welcome to MyRoutines Component</h1>
     </header>
   )
 }
 
-export default Header;
+export default MyRoutines;
