@@ -8,12 +8,14 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import { Activities, Home, MyRoutines, Routines } from "./components";
+import { Activities, Home, MyRoutines, Routines, NavBar } from "./components";
 
 const App = () => {
   return (
     <Router>
       <div id="App">
+        <NavBar/>
+
         <Switch>
 
           <Route path="/Home">
