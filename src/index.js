@@ -26,11 +26,11 @@ const App = () => {
             <Activities/>
           </Route>
 
-          <Route path="/MyRoutines">
+          <Route path="/my-routines">
             <MyRoutines/>
           </Route>
 
-          <Route path="/Routines">
+          <Route path="/exp-routines">
             <Routines/>
           </Route>
 
