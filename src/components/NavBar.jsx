@@ -1,48 +1,7 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import "./NavBar.css";
-
-const NavBar = () => {
-  return (
-    <div className="nav-bar">
-      <header>
-        <h1 className="logo">Fitness Tracker</h1>
-
-        <div className="home" id>
-          <Link id="home" to="/home">
-            Home
-          </Link>
-        </div>
-
-        <div className="activities" id>
-          <Link id="activities" to="/activities">
-            Activities
-          </Link>
-        </div>
-
-        <div className="my-routines" id>
-          <Link id="my-routines" to="/my-routines">
-            My Routines
-          </Link>
-        </div>
-
-        <div className="exp-routines" id>
-          <Link id="exp-routines" to="/exp-routines">
-            Explore Routines
-          </Link>
-        </div>
-      </header>
-    </div>
-  );
-};
-
-export default NavBar;
-=======
-import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
-//import "./NavBar.css";
+// import { NavLink } from "react-router-dom";
+// import { Link } from "react-router-dom";
+// import "./NavBar.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, Container} from 'react-bootstrap'
 const NavBar = () => {
@@ -51,9 +10,8 @@ const NavBar = () => {
     <br />
     <Navbar bg="primary" variant="dark">
       <Container>
-      <Navbar.Brand href="#home">Fitness Tracker</Navbar.Brand>
+      <Navbar.Brand href="home">Fitness Tracker</Navbar.Brand>
       <Nav className="me-auto">
-        <Nav.Link href="home">Home</Nav.Link>
         <Nav.Link href="activities">Activities</Nav.Link>
         <Nav.Link href="my-routines">My Routines</Nav.Link>
         <Nav.Link href="exp-routines">Explore Routines</Nav.Link>
@@ -67,45 +25,7 @@ const NavBar = () => {
       </Container>
     </Navbar>
     </>
-
-
-
-
-
-
-
-
-    // <div className="nav-bar">
-    //   <header>
-    //     <h1 className="logo">Fitness Tracker</h1>
-   
-    //   <div className="home" id>
-    //     <Link id="home" to="/home">
-    //       Home
-    //     </Link>
-    //   </div>
-
-    //   <div className="activities" id>
-    //     <Link id="activities" to="/activities">
-    //       Activities
-    //     </Link>
-    //   </div>
-
-    //   <div className="my-routines" id>
-    //     <Link id="my-routines" to="/my-routines">
-    //       My Routines
-    //     </Link>
-    //   </div>
-
-    //   <div className="exp-routines" id>
-    //     <Link id="exp-routines" to="/exp-routines">
-    //       Explore Routines
-    //     </Link>
-    //   </div>
-    //   </header>
-    // </div>
   );
 };
 
 export default NavBar;
->>>>>>> 75b4903a09c2e0ca0ff0779e6700acfbbc52a28a
