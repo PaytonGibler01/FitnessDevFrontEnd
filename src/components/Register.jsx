@@ -16,11 +16,12 @@ const  Register = ({ setIsLoggedIn }) => {
       onSubmit={async (event) => {
         event.preventDefault();
         try {
-          const {
-            data: { token },
-          } = await registerUser(userName, password);
-          console.log(token)
-          storeToken(data.token);
+           const {
+             token,
+           } = await registerUser(userName, password);
+          
+          
+          storeToken(token);
           setIsLoggedIn(true);
 
           setUserName("");

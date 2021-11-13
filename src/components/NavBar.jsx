@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 // import "./NavBar.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, Container} from 'react-bootstrap'
-const NavBar = () => {
+const NavBar = ({isLoggedIn, setIsLoggedIn}) => {
   return (
     <>
     <br />
@@ -18,8 +18,21 @@ const NavBar = () => {
       </Nav>
        
       <Nav className="me-auto">
-        <Nav.Link href="login">Login</Nav.Link>
-        <Nav.Link href="register">Register</Nav.Link>
+         { isLoggedIn ? (
+            <Nav.Link href="login" onClick = {()=>{
+               localStorage.clear()
+               setIsLoggedIn(false)
+            }}
+            >Logout</Nav.Link>
+         ):(null)}
+
+         { ! isLoggedIn ? (
+            <>
+            <Nav.Link href="login">Login</Nav.Link>
+            <Nav.Link href="register">Register</Nav.Link>
+            </>
+         ):(null)}
+
       </Nav>
       
       </Container>

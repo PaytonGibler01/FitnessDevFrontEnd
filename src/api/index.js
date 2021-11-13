@@ -13,7 +13,7 @@ export async function registerUser(userName, password) {
     });
 
     // try to add email element?
-console.log(data)
+    // console.log(data)
     return data;
   } catch (error) {
     throw error;

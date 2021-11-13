@@ -15,7 +15,7 @@ const App = () => {
   return (
     <Router>
       <div id="App">
-        <NavBar/>
+        <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 
         <Switch>
 
@@ -36,7 +36,7 @@ const App = () => {
           </Route>
 
           <Route path="/login">
-            <Login/>
+            <Login setIsLoggedIn={setIsLoggedIn}/>
           </Route>
 
           <Route path="/register">
