@@ -4,9 +4,11 @@ import "./Routines.css";
 
 const Routines = () => {
   return (
-    <header>
-      <h1>Welcome to Routines Component</h1>
-    </header>
+    <>
+      <header>
+        <h1>Welcome to Routines Component</h1>
+      </header>
+    </>
   );
 };
 
