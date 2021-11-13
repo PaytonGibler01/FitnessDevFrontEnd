@@ -64,6 +64,21 @@ export async function getPublicRoutines() {
     throw error;
   }
 }
+// export async function getAllActivities() {
+//   const myToken = getToken()
+  
+//   try {
+//     const { data } = await axios.get(`${BASE}/api/activities`, {
+//       headers: {
+//         "Content-Type": 'application/json',
+//           'Authorization': `Bearer ${myToken}`
+//       }
+//     });
+//     return data;
+//   } catch (error) {
+//     throw error;
+//   }
+// }
 
 export async function createActivities(id, name, description) {
   const token = getToken();
