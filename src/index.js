@@ -8,9 +8,10 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import { Activities, Home, MyRoutines, Routines, NavBar } from "./components";
+import { Activities, Home, MyRoutines, Routines, NavBar, Login, Register } from "./components";
 
 const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <Router>
       <div id="App">
@@ -32,6 +33,14 @@ const App = () => {
 
           <Route path="/exp-routines">
             <Routines/>
+          </Route>
+
+          <Route path="/login">
+            <Login/>
+          </Route>
+
+          <Route path="/register">
+            <Register setIsLoggedIn={setIsLoggedIn}/>
           </Route>
 
         </Switch>
