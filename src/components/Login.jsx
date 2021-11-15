@@ -18,8 +18,6 @@ const Login = ({ setIsLoggedIn }) => {
           try {
             const token = await loginUser(userName, password);
 
-            storeToken(token);
-            storeUser(userName);
             setIsLoggedIn(true);
 
             setUserName("");
